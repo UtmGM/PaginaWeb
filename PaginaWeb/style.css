@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;  
+    
+}
+nav{
+    background: #0fb8b8;
+    height: 80px;
+    width: 100%;  
+    margin: 0 auto;  
+}
+
+.header {
+    display:inline;
+    justify-content:center;
+    align-items: center;   
+    box-shadow: 0 4px 5px;
+
+}
+.title {
+    display:inline;
+    font-size: 30px;
+    margin:100px;
+    text-transform: uppercase;
+    color: rgb(3, 41, 83);
+}
+
+.inicio {
+    padding-top:80px;
+    background: none;
+    padding-bottom: 10px;
+}
+.cuerpo {
+    padding-top:90px;
+    background: rgb(40, 163, 155);
+    padding-bottom: 80px;
+}
+.fin {
+    padding-top:50px;
+    background: none;
+    padding-bottom: 80px;
+}
+.materias{
+    padding-top:90px;
+    background: rgb(17, 99, 99);
+    padding-bottom: 80px;
+    /*fondo*/
+}
+.materias p{
+  color: rgb(220, 221, 253);
+  text-align: auto;
+}
+.materias .title{
+  color: rgb(192, 251, 255)
+}
+.materias img {
+  width: 300px;
+  height: 300px;
+  float:left;
+  border-radius: 50%;
+}
+#column1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+#column1 > div {
+  width: 50%;
+  margin-bottom:  10px 20px;
+  font-size: 18px;
+  color: rgb(23, 99, 23);
+  padding: 50px;
+  text-align: auto;
+  
+}
+.fin h3{
+  padding: 20px 20px;
+}
+
+
+/*img dessa*/
+.imagen{
+  text-align: center;  
+}
+
+.imagen img{
+  background-color: none;
+  max-width: 400px;  
+}
+/*term*/
+p {
+    margin-bottom:  10px 20px;
+    font-size: 18px;
+    color: rgb(15, 25, 44);
+    padding: 50px;
+}
+
+.enlace{
+    position: absolute;
+    padding: 14px 10px;
+    margin-top: px;
+}
+/*CAJA*/
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  top: auto;
+
+}
+
+.box-container .box {
+  height: 19rem;
+  width: 25rem;
+  background: #58e68e;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 .3rem 5rem rgb(48, 252, 82);
+  margin: 2rem;   
+}
+.box svg{
+  margin: 5%;
+  width: 90px;
+  height: 90px;
+}
+
+
+.box-container .box h3 {
+  font-size: 20px;
+  color: #9c27b0;
+  
+}
+
+.box-container .box p {
+  padding: 0 15px;
+  font-size: 16px;
+}
+.box-container .img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+/*box segundo*/
+.materias .box-container .box h3 {
+  font-size: 20px;
+  color: #38001f;
+}
+.materias .box-container .box {
+  padding: 20px 20px;
+}
+.materias .box-container .box {
+  padding:  10px 10px;
+  font-size: 16px;
+  color: rgb(26, 0, 0);
+  line-height: 190%;
+}
+.materias .box-container .box {
+  box-shadow: none;
+  height: 19rem;
+  width: 25rem;
+  background: #aaf0cd;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 2rem; 
+}
+/**/
+/*CAJA TERM*/
+/*menu*/
+.menu-fixed {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+  background: #059000;
+  transition: 0.5s;
+}
+/* Menu */
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+.open-menu {
+    font-size: 30px;
+    color: rgb(148, 36, 36);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    
+}
+
+
+@media (max-width: 850px) {
+  /* Menu */
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: #2c3e50;
+    
+
+    opacity: 0;
+    pointer-events: none;
+    
+  }
+  li a:hover, li a.active{
+    background: rgb(94, 110, 128);
+    color: rgb(44, 124, 230);
+ 
+  }
+
+  #column1 {
+    flex-direction: column;
+  }
+  #column1 > div {
+    padding: 10px;
+    
+  }
+  .menu li {
+    padding: 0;
+  }
+
+  .menu a {
+    line-height: 70px;
+    font-size: 25px;
+    
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+   
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 20px 40px;
+    
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.3s;
+  }
+
+
+}
